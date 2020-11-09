@@ -9,3 +9,21 @@
   --font-size: 16px;
   --font-size-small: 12px;
 }
+
+.navbarLine::after {
+  content: "" !important;
+  display: inline-block !important;
+  width: 2px !important;
+  height: 2.5rem !important;
+  background: var(--blue) !important;
+}
+/* header */
+header {
+  background: url(img/Header.png);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+header img {
+  width: 12%;
+}
