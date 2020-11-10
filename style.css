@@ -8,15 +8,64 @@
   --fontFamily: "Roboto", sans-serif;
   --font-size: 16px;
   --font-size-small: 12px;
+  --transition: 0.4s ease;
+}
+.m-right {
+  margin-right: 5%;
+}
+.m-left {
+  margin-left: 10%;
 }
 
-.navbarLine::after {
-  content: "" !important;
-  display: inline-block !important;
-  width: 2px !important;
-  height: 2.5rem !important;
-  background: var(--blue) !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0 !important;
+  font-weight: 500;
+  line-height: 1.2;
 }
+
+/* navbar */
+
+.bg-light {
+  background: var(--gray) !important;
+}
+nav a.navbar-brand {
+  margin-left: 10% !important;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbarLine {
+  display: block;
+  content: "";
+  background: var(--blue);
+  height: 2.6rem;
+  width: 1px;
+}
+nav .border-right {
+  border-right: 1px solid var(--blue) !important;
+  padding-right: 30px;
+}
+.navbar-brand {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+nav h1 {
+  font-size: 1.2rem !important;
+  line-height: 1.2 !important;
+  font-weight: 300;
+}
+nav h1 span {
+  font-weight: bold;
+  font-size: 1.2rem !important;
+  letter-spacing: 8px;
+}
+nav h1 span .noSpace {
+  letter-spacing: 0;
+}
+
 /* header */
 header {
   background: url(img/Header.png);
@@ -25,5 +74,6 @@ header {
   height: 50vh;
 }
 header img {
+  min-width: 150px;
   width: 12%;
 }
